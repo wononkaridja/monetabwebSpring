@@ -1,0 +1,56 @@
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+
+<aside th:fragment="sidebar" class="sidebar navbar-default" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="sidebar-search">
+                <div class="input-group custom-search-form">
+                    <h3>Mon Etab</h3>
+                    </span>
+                </div>
+                <!-- /input-group -->
+            </li>
+            <li>
+                <a th:href="@{/home}" class="active"><i class="fa fa-dashboard fa-fw"></i> Tableau de bord</a>
+            </li>
+
+            <li class="sidebar-item  ">
+                <a th:href="@{/students}" class='sidebar-link'>
+                    <i> <img src="../images/eleves.png" width="25" ></i>
+                    <span>Students</span>
+                </a>
+            </li>
+
+
+
+            <li class="sidebar-item  ">
+                <a th:href="@{/teachers}" class='sidebar-link'>
+                    <i> <img src="../images/professeur.png" width="25" ></i>
+                    <span>Teachers</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item  ">
+                <a th:href="@{/users}" class='sidebar-link'>
+                    <i> <img src="../images/" width="25" ></i>
+                    <span>Users</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item  ">
+                <a th:href="@{/reports}" class='sidebar-link'>
+                    <i> <img src="../images/rapport.png" width="25" ></i>
+                    <span>Reports</span>
+                </a>
+            </li>
+
+            <hr>
+            <li style="padding-top: 70%;">
+                <a th:href="@{/}"><i class="fa fa-edit fa-fw"></i>Déconnexion</a>
+            </li>
+        </ul>
+    </div>
+</aside>
